@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rohan Kumar</title>
+    <link rel="stylesheet" href="/assets/css/segments.css" />
+    <style>
+     #result {
+       border: 1px solid #ccc;
+       padding: 3px;
+       display: none;
+     }
+
+     #result ul {
+       list-style-type: none;
+       padding: 0;
+       margin: 0;
+     }
+
+     #result ul li {
+       padding: 5px 0px;
+     }
+
+     #result ul li:hover {
+       background: #eee;
+     }
+
+    </style>
+  </head>
+  <body style="text-align: center">
+    <div class="container">
+      <section class="content-block">
+        <h2>Block 1</h2>
+        <p>This block is always visible.</p>
+      </section>
+    </div>
+    <div>
+      <form autocomplete="off">
+        <input type="text" name="q" id="q"/>
+        <div id="result"></div>
+      </form>
+    </div>
+  </body>
+  <script type="module">
+    import {showResults, handleClick} from "/index.js";
+    window.showResults = showResults;
+    window.handleClick = handleClick;
+  </script>
+  <script></script>
+</html>
